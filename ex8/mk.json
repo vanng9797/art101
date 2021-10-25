@@ -1,0 +1,75 @@
+{
+  "toons": [
+
+{
+  "name":"pp",
+  "age":"2",
+  "dialogue":"hello",
+  "r":255,
+  "g":171,
+  "b":212,
+  "head": 80,
+  "torso": 35,
+  "posX":50,
+  "posY":90,
+  "moveX":[2,0.4,1,0.5,-5,0.3,2,-1],
+  "moveY":[1,-2,0.1,-2,-1,0.7,2,-2],
+  "nextX":0,
+  "nextY":0,
+  "ears":40,
+  "shoes":35,
+  "rotation":0,
+  "moveRotation":[5,10,15,20,25,30,35,40,45,50],
+  "nextRot":0
+
+},
+
+{
+  "name":"kat",
+  "age":"6",
+  "dialogue":"what",
+  "r":255,
+  "g":254,
+  "b":171,
+  "head": 60,
+  "torso": 30,
+  "posX":50,
+  "posY":90,
+  "moveX":[1,-3,4,-2,-1,3,1,-2],
+  "moveY":[2,3,4,2,-1,3,1,-2],
+  "nextX":0,
+  "nextY":0,
+  "ears":15,
+  "shoes":30,
+  "rotation":0,
+  "moveRotation":[10,20,30,40,50,-10,-20,-30,-40,-50],
+  "nextRot":0
+
+},
+
+{
+  "name":"buny",
+  "age":"4",
+  "dialogue":"cool",
+  "r":171,
+  "g":231,
+  "b":255,
+  "head": 34,
+  "torso": 39,
+  "posX":100,
+  "posY":100,
+  "moveX":[0.5,-0.5,0.4,-2,-0.3,0.3,0.7,-0.2],
+  "moveY":[0.5,-0.5,0.4,-3,-0.3,3,-0.7,0.2],
+  "nextX":0,
+  "nextY":0,
+  "ears":15,
+  "shoes":15,
+  "rotation":0,
+  "moveRotation":[5,10,15,20,25,-5,-10,-15,-20,-25],
+  "nextRot":0
+
+}
+
+]
+
+}

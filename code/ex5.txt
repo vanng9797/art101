@@ -1,0 +1,197 @@
+String[] brands = {"choco","strawberry","matcha","mango","pineapple", "apple","vanilla","mint","passionfruit", "kumquat","coconut"};
+Item[] items;
+Star[] starArr = new Star[20];
+
+
+void setup(){
+  size(800,800);
+  background(180);
+  
+ items = new Item[20]; // Create
+  
+  for (int i = 0;  i < items.length;i++) {   
+  items[i] = new Item(brands[int(random(brands.length))],random(5));
+    
+  }
+  
+   color col;
+  for (int i = 0; i < starArr.length; i++) {
+    col = color(random(50,100));
+    starArr[i] = new Star(col,width,height,""); 
+  }
+}
+
+void draw() {
+  fill(220);
+  rect(0,0,width*2,height*2);  
+  for (int i = 0;  i < items.length;i++) {   
+      items[i].move();
+      items[i].update();
+  }
+  
+  for (int i = 0; i < starArr.length; i++) {
+  starArr[i].update();
+  starArr[i].display();
+  } 
+  
+  // if (frameCount < 350 ) {
+  //saveFrame("images/face-######.png");
+  //} else {  
+  //  exit();  
+  //}
+}
+
+
+void mousePressed() {
+  
+  println("changing");
+  for (int i = 0; i < starArr.length; i++) {
+  starArr[i].newDirection();
+  }
+  
+  for (int i = 0; i < items.length; i++) {
+  items[i].newDirect();
+  }
+  
+}
+
+class Item {
+  float lox;
+  float loy;
+  color rc;
+  float acc;
+  String brand;
+  float flipper;
+  float sc;
+  int direction = 1;
+  
+  Item (String br, float sp) {
+    lox = int(random(20,800));
+    loy = int(random(20,800));
+    rc = color(random(255),random(255),random(255),random(50,150));
+    acc = sp;
+    brand = br;
+    flipper = random(-50,50);
+    sp = random(2);
+  }
+  
+    void move() {
+    lox+=acc;
+    if (lox > width) {
+      lox = 0;
+    }
+    flipper+=.1;
+  
+    loy+=(acc*direction);
+    if (loy>height){
+      direction *=-1;
+    }
+
+
+}
+   
+    void update() {
+    
+    pushMatrix();
+    
+   // rotate(radians(flipper));
+   // scale(sc);
+    translate(lox,loy);
+    
+    fill(rc);
+    rect(30, 20, 55, 55, 3, 6, 12, 18);    
+  // fill(rc);
+    ellipse(20, 10, 20, 20);
+    fill(0, 102, 153, 204);
+    text(brand,10,20);
+    rectMode(CENTER);
+    popMatrix();
+    
+  }
+  
+    void newDirect() {
+    acc = random(-0.5,5);
+   //yspeed = random(-3,3);
+  
+  
+}
+
+}
+
+class Star { 
+  // class variables that are unique to each instance of a class.
+  color c;
+  float xpos;
+  float ypos;
+  String orifice;
+  float xspeed;
+  float yspeed;
+  float scalez;
+  float grow;
+  
+  // The Constructor is like setup and helps defines the details of the object
+  Star(color tempC, float tempXpos, float tempYpos, String oa) { 
+    // tempC, tempXpos, etc. are the argument vars that pass data to the class vars
+    c = tempC;
+    xpos = tempXpos;
+    ypos = tempYpos;
+    xspeed = random(-.1,.1);
+    yspeed = random(-.1,.1);
+    scalez = random(.25,2);
+    grow = random(0.01,0.1);
+   
+  }
+  
+  // functions inside of Classes are called methods
+  // This one is designed to go in the draw loop and called repeatly
+  void display() {
+    pushMatrix();
+   noStroke();
+    fill(random(10,200),20,150);
+    rectMode(CENTER);
+    ellipse(xpos,ypos,5,15);
+    ellipse(xpos,ypos,15,5);
+    //text( orifice,xpos+5,ypos -15);
+   popMatrix();
+  }
+  
+  
+  void update() {
+    
+    xpos = xpos + xspeed;
+    ypos = ypos + yspeed;
+    xpos += random(-1,1);
+    ypos += random(-1,1);
+       scalez += grow;
+    if (xpos > width) {
+      xpos = 0;
+    }
+    
+    if (xpos < 0) {
+      xpos = width;
+    }
+    
+    if (ypos > height) {
+      ypos = 0;
+    }
+    
+    if (ypos < 0) {
+      ypos = height;
+    }
+    
+    if (scalez > height || scalez < 0.5){
+      grow = -grow;
+  }
+  }
+  
+  void newDirection() {
+    xspeed = random(-1,5);
+    yspeed = random(-1,5);
+  }
+  
+  //void newSize(){
+  //xpos = tempXpos++;
+  //ypos= tempYpos++;
+  //}
+  
+}

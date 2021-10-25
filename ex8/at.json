@@ -1,0 +1,73 @@
+{
+  "toons": [
+
+{
+  "name":"Jerry",
+  "r":180,
+  "g":160,
+  "b":80,
+  "head": 60,
+  "torso": 33,
+  "shoes": 6,
+  "moveRotation": [0,2,5,-12,3,-7,12],
+  "nextRot":0,
+  "rotation":0,
+  "dialogue":"mental boom",
+  "number":"20",
+  "posX":50,
+  "posY":90,
+  "moveX":[5,-3,4,-6,-3,3,4,-2],
+  "moveY":[2,4,4,6,-3,3,4,-2],
+  "nextX":0,
+  "nextY":0,
+    "ears": 15,
+    "age": 20
+},
+{
+  "name":"Larry",
+  "r":17,
+  "g":160,
+  "b":230,
+  "head": 40,
+  "torso": 20,
+  "shoes": 6,
+  "moveRotation": [0,2,5,-12,3,-7,12],
+  "nextRot":0,
+  "rotation":0,
+  "dialogue":"why hello there",
+  "number":"20",
+  "posX":50,
+  "posY":90,
+  "moveX":[5,-3,4,-6,-3,3,4,-2],
+  "moveY":[2,4,4,6,-3,3,4,-2],
+  "nextX":0,
+  "nextY":0,
+    "ears": 10,
+    "age": 21
+},
+{
+  "name":"Garry",
+  "r":180,
+  "g":20,
+  "b":220,
+  "head": 90,
+  "torso": 60,
+  "shoes": 6,
+  "moveRotation": [0,2,5,-12,3,-7,12],
+  "nextRot":0,
+  "rotation":0,
+  "dialogue":"(confused noises)",
+  "number":"20",
+  "posX":50,
+  "posY":90,
+  "moveX":[5,-3,4,-6,-3,3,4,-2],
+  "moveY":[2,4,4,6,-3,3,4,-2],
+  "nextX":0,
+  "nextY":0,
+    "ears": 5,
+    "age": 22
+}
+
+]
+
+}

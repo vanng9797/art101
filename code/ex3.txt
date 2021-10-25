@@ -1,0 +1,126 @@
+int counter1 = 45;
+int counter2 = -45;
+PImage one; 
+PImage two;
+PImage three;
+PImage ray;
+
+void setup() {
+  size(800, 600);
+  
+    one = loadImage ("image1.jpg");
+  two = loadImage ("image2.jpg"); 
+    three = loadImage ("image3.jpg"); 
+    ray=loadImage ("ray.jpg");
+}
+
+void draw() {
+  background(50);
+    fill(20, 10);
+  noStroke();
+  StevesRanDots();
+  
+    if (!mousePressed) {
+      tint(255, 140);
+     // image (one, 0, 0, width/2, height/2);
+     //image (one, width/2, height/2, width/2, height/2);
+     // image (two, width/2, 0, width/2, height/2);
+     //image (two, 0, height/2, width/2, height/2);
+     image (ray, 0, 0, width, height);
+    }
+     else {
+       tint(255, 140);
+          image (three, 0, 0, width, height);
+     }
+  
+  stroke(0);
+  strokeWeight(8);
+  //noFill();
+ // push();
+  //translate(width/2, height/2);
+  translate(mouseX, height/2);
+  rotate(radians(1)); 
+  makeFace();
+ // pop();
+ 
+ 
+ pushMatrix();
+   // orgin of  moveX, moveY
+   translate(180,150);
+   rotate(radians(counter1)/.25);
+   //rotate(radians(45));
+   scale(1);
+   // the first hat
+   rect(-10, 5, 15, 70, 10);
+   // pushing it over to the right and up
+   translate(250, 100);
+  // arc(100, 100, 50, 100, 5,PI);      
+ popMatrix();
+
+ fill(255,0,0);
+ pushMatrix();
+   // orgin of moveX, moveY
+   translate(width/2-50, height-100);
+
+   rotate(radians(counter2));
+   //rotate(radians(-45));
+   scale(.75);
+
+   // the second hat
+   rect(0, 0, 100, 20, 5);
+   // pushing it over to the right and up
+   translate(25, -100);
+   rect(0, 0, 50, 100, 5);
+ popMatrix();
+ 
+ 
+ counter1++;
+ counter2--;
+
+ if (frameCount < 200 ) {
+  saveFrame("images/face-######.png");
+  } else {  
+    exit();  
+  }
+
+}
+
+
+
+void StevesRanDots() {
+  float r = random(25);
+  float rloop = random(10);
+  for (int i = 1; i < r; i++) {
+    fill(r+100, rloop+10, random(250));
+    ellipse(random(width), random(height), r+1, r+1);
+  }
+}
+
+
+
+void makeFace() { 
+  // draw a face!
+  //note that is based on an origin in the top left corner 
+ fill(250);
+  arc(-45, 10, 100, 70, 2, PI+1.2);
+    arc(145, 10, 100, 70, 2, PI+5);
+ ellipse(50, 25, 240, 240);
+  ellipse(180, 150, 60, 60);
+ ellipse(0, 0, 80, 80);
+  if (!mousePressed) {
+     ellipse(0, 0, 5, 5);
+
+  } else {
+line(0, 0, 8, 0);
+}
+  ellipse(100, 0, 80, 80);
+   if (!mousePressed) {
+  ellipse(100, 0, 5, 5);
+   } else {
+line(100, 0, 108, 0);
+}
+  arc(50, 50, 60, 40, 1, PI);
+  arc(50, -80, 160, 60, 1, PI+4.2);
+  rect(5,-120,10,25);
+ // triangle(50,150,10,120,80,100);
+}

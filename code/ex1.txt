@@ -1,0 +1,61 @@
+int counter = 0;
+
+void setup() {
+  size(400,400);
+  background(255);
+  frameRate(10);
+
+   for (int a = 0; a < height;a+=10) {
+  //  background(250);
+    fill(155,100,150,150);
+    noStroke();
+    rect(0,a,width,10);
+    fill(155,200,200,150);
+    noStroke();
+    rect(a,0,10,height);
+    println(a);    
+
+ }
+ 
+// for (int i = 20; i < 400; i += 20) {
+ //   if (i < 200) {
+//      line( 0, i, 400, i );
+  //  } else {
+  //    line( 0, i, width, i );
+  //  }
+ // }
+}
+void draw() {
+
+  
+    stroke(255);
+    fill(0-255,0-255);
+    ellipse(mouseX,mouseY,random(50),50);  
+    
+ 
+  fill(100,100,200,20);
+     noStroke();
+  rect(0, counter, width, 10);
+  fill(200,0,50,20);
+     noStroke();
+  rect(counter, 0, 10, height);
+
+if (counter > height) {
+
+  counter = 20;
+} else {
+  counter+=20;
+}
+ 
+ 
+  //if (frameCount < 200 ) {
+  //saveFrame("images/face-######.png");
+  //} else {  
+  //  exit();  
+  //}
+
+}
+
+void mousePressed() {
+  setup(); 
+}

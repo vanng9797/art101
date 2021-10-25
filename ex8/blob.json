@@ -1,0 +1,72 @@
+{
+  "toons": [
+
+{
+  "name":"Hobi",
+  "r":180,
+  "g":160,
+  "b":80,
+  "head": 60,
+  "torso": 40,
+  "dialogue": "I'm your Hope ^o^ ",
+  "shoes": 15,
+  "age":27,
+  "ears":10,
+  "moveRotation": [5,10,15,20,25,-5,-10,-15,-20,-25],
+  "nextRot":0,
+  "rotation":0,
+  "posX":50,
+  "posY":90,
+  "moveX":[5,-3,4,-6,-3,3,4,-2],
+  "moveY":[2,4,4,6,-3,3,4,-2],
+  "nextX":0,
+  "nextY":0
+},
+
+{
+  "name":"Suga",
+  "r":50,
+  "g":80,
+  "b":180,
+  "head": 45,
+  "torso": 30,
+  "dialogue": "You know BTS?",
+  "shoes": 10,
+  "age":28,
+  "ears":20,
+  "moveRotation": [10,20,30,40,50,-10,-20,-30,-40,-50],
+"nextRot":0,
+"rotation":0,
+  "posX":190,
+  "posY":100,
+  "moveX":[0.5,-0.5,0.4,-2,-0.3,0.3,0.7,-0.2],
+  "moveY":[0.5,-0.5,0.4,-3,-0.3,3,-0.7,0.2],
+  "nextX":0,
+  "nextY":0
+},
+
+{
+  "name":"Kookie",
+  "r":100,
+  "g":80,
+  "b":190,
+  "head": 50,
+  "torso": 62,
+  "dialogue": "I like Countryside",
+  "shoes": 20,
+  "age":23,
+  "ears":15,
+  "moveRotation":[5,10,15,20,25,30,35,40,45,50],
+  "nextRot":0,
+  "rotation":0,
+  "posX":190,
+  "posY":100,
+  "moveX":[0.5,-0.5,0.4,-2,-0.3,0.3,0.7,-0.2],
+  "moveY":[0.5,-0.5,0.4,-3,-0.3,3,-0.7,0.2],
+  "nextX":0,
+  "nextY":0
+}
+
+]
+
+}

@@ -1,0 +1,89 @@
+float randr = 0;
+float randg = 0;
+float randb = 0;
+String gridName = "Gary";
+ float inc = TWO_PI/5;
+ int counter = 0;
+ 
+ 
+void setup() {
+  size(400, 400);
+  background(220, 215, 250);
+  //noStroke();
+   Float a = 0.0;
+  float inc = TWO_PI/5;
+  println(" The inc = " + inc);
+  stroke(255, 255, 255);
+  
+  for (int i=0; i<300; i+=2) {
+    line(i, 50, i, 50+sin(a)*40.0);
+    println(" The angle = " + a + "The sin = " + sin(a));
+    a = a + inc;
+  }
+  
+  //noLoop();
+  
+  for (int e = 0; e < height;e+=10) {
+  //  background(250);
+    fill(155,100,150,150);
+    noStroke();
+    rect(0,e,width,10);
+    fill(155,200,200,150);
+    noStroke();
+    rect(e,0,10,height);
+    println(e);    
+
+ }
+  
+}
+
+void draw() {
+ for (int i = 0; i < 400; i += 10) {
+    
+   for (int j = 0; j < 400; j += 10) {
+     
+      randr = random(100);
+      randg = random(150);
+      randb = random(255);
+      //println(j);
+   
+      fill(randr,randg,randb);
+      //fill(255);
+     ellipse( i+10 + inc, j+inc, inc+5, inc+5 );
+    rect(i+25 + inc, j+inc, 15*inc, 15*inc);
+     println(gridName + ", now has a fill value of " + randr);
+   }
+  }
+// inc+= .001;
+    stroke(255);
+    fill(0-255,0-255);
+    ellipse(mouseX,mouseY,random(50),50);  
+    
+ 
+  fill(100,100,200,20);
+     noStroke();
+  rect(0, counter, width, 10);
+  fill(200,0,50,20);
+     noStroke();
+  rect(counter, 0, 10, height);
+
+if (counter > height) {
+
+  counter = 20;
+} else {
+  counter+=20;
+}
+ 
+  //if (frameCount < 200 ) {
+  //saveFrame("images/face-######.png");
+  //} else {  
+  //  exit();  
+  //}
+  
+ }
+
+void mousePressed() {
+  setup(); 
+
+
+}
