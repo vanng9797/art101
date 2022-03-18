@@ -1,0 +1,293 @@
+.navbar-nav{
+
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+align-items: center;
+ justify-content:center;
+padding:0% 01% 2% 0%;
+}
+
+.nav-item{
+	font-size: 12px;
+   background-image:url(images/theme/clear-tape-11.png);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   color: black;
+  font-weight: bold;
+   display:inline-block;
+   background-color:none;
+   padding: 5px 20px;
+/*    text-decoration:none;*/
+    transition: .2s all;
+   /* border: 3px solid black;*/
+  }
+
+  .nav-item:hover{
+	background-image:url(images/theme/clear-tape-04.png);
+	background-repeat: no-repeat;
+  background-size: 120% 120%;
+	color: white;
+	filter: brightness(100%);
+	font-size: .8rem;
+/*    background-color:white;*/
+  }
+
+.nav-link{
+	color: black;
+}
+
+
+}
+
+.p5Canvas {
+
+
+	text-align: center;
+	justify-content:center;
+	flex-direction:column;
+    display:flex;
+}
+
+.container {
+/*    width: 1200px;*/
+/*background-image: url(images/DRS_Tape_Painters_09.PNG);
+	background-size: 12% 30%;
+	background-repeat: no-repeat;*/
+    margin: ;
+/*    box-sizing: border-box;*/
+
+	text-align: center;
+	justify-content:center;
+	flex-direction:column;
+    display:flex;
+
+}
+
+h1{
+	color: black;
+	font-size: 2.6rem;
+	font-weight:1;
+	text-align: center;
+	margin-bottom: 0%;
+}
+
+h2{
+	color: black;
+	font-size: 1.8rem;
+	background-image: url(images/theme/ps_08.png);
+	background-size:105%;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-weight: 100;
+	text-align: center;
+	padding:2.2%;
+	//margin-top: 5%;
+}
+h3 {
+  font-size: 12px;
+  text-align: center;
+}
+h4{
+	font-size: 1.4rem;
+}
+h5{
+font-size: 1rem;
+font-weight: 100;
+letter-spacing: 0.2px:
+}
+
+header{
+padding-top:2%;
+	position: inherit;
+	  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 270%;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+body{
+	align-content: center;
+	font-family: 'Poppins', sans-serif;
+	display:flex;
+	flex-direction:column;
+    color:black;
+	  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+}
+
+a:link {
+    color: mediumpurple;
+    text-decoration: none;
+}
+
+.column {
+display: block;
+//margin: 2%;
+padding: 2% 0 5% 0;
+position: relative;
+line-height: 1.25;
+}
+
+.column img{
+width: 50%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15%;
+}
+
+/* Create four equal columns that sits next to each other */
+.col {
+  flex: 24%;
+  max-width: 25%;
+  padding: 0 5px;
+}
+
+.col img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column video{
+margin-top: 10px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .col {
+    flex: 48%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.video{
+object-fit: cover;
+/*
+    max-width:400px;
+    max-height:auto;
+*/
+/*width: 400px;*/
+/*	margin:5px;*/
+  height: auto;
+	transition: .2s all;
+}
+.video:hover{
+	filter: drop-shadow(2px 2px 9px #00002a);
+	opacity: 85%;
+	filter:brightness(5px);
+}
+
+.project_video{
+	//margin:2%;
+	min-width: 100%;
+	min-height: 100%;
+
+}
+
+.project_image{
+	width: 50%;
+  	z-index: 0;
+	//margin:2%;
+	//min-width: 100%;
+	//min-height: 100%;
+}
+
+.graphic{
+object-fit: cover;
+  width: 400px;
+  height: auto;
+transition: .2s all;
+}
+
+.graphic:hover{
+	filter: drop-shadow(2px 2px 8px #000000);
+	opacity: 90%;
+	filter:brightness(5px);
+}
+
+.container2 {
+    //display: grid;
+    //grid-template-columns: auto;
+    width: 100%;
+    //grid-column-gap: 1%;
+   // grid-row-gap: 1%;
+    justify-content:center;
+    margin:2.5% 5% 2.5% 15%;
+
+    /*top, right, bottom, left*/
+  }
+
+.pfp{
+	padding-top: 0%;
+	padding-left: 0%;
+	padding-right: 2.5%;
+	float: left;
+	width:30%;
+    height:30%;
+}
+
+p{
+	justify-content:center;
+	padding-top: 1.5%;
+	font-size: 15px;
+    width: 100%;
+    text-align: left;
+    padding-left: ;
+   padding-right: ;
+	 letter-spacing: 1px;
+}
+
+.description{
+	margin-left:25%;
+	margin-right:25%;
+	padding-bottom:2%;
+	line-height: 1.8;
+}
+.wrapper{
+	left: -2615.46px;
+    width: 27367.4px;
+	position: relative;
+    height: 100%;
+}
+
+.slide{
+    top: 0px;
+    left: 0px;}
+
+footer {
+	background-image: url(images/theme/ps_02.png);
+		background-size:110%;
+	background-repeat: no-repeat;
+	background-position: center;
+  position:relative;
+  color: black;
+  padding:5% 0% 5% 0%; /*top, right, bottom, left*/
+}
