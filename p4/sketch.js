@@ -36,7 +36,7 @@ function preload() {
   img5 = loadImage("assets/KDA.png");
   img6 = loadImage("assets/allout.png");
   img7 = loadImage("assets/blank_fillable.jpg");
-  img8 = loadImage("assets/35mmTexture1.png");
+
 
   helpbtnanim = loadAnimation('assets/help_u.png',
   'assets/help_r.png', 'assets/help_d.png');
