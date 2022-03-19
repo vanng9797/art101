@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang=en>
+
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="motion graphics design">
@@ -11,10 +12,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylep4.css">
+
   <script language="javascript" type="text/javascript" src="../lib/p5.js"></script>
   <!-- uncomment lines below to include extra p5 libraries -->
   <script language="javascript" src="../lib/p5.sound.js"></script>
-	<script language="javascript" src="../lib/p5.play.js"></script>
+  <script language="javascript" src="../lib/p5.play.js"></script>
   <script language="javascript" src="../lib/scenemanager.js"></script>
   <script language="javascript" type="text/javascript" src="touch.js"></script>
   <script language="javascript" type="text/javascript" src="scenes.js"></script>
@@ -25,17 +27,6 @@
   <script src="https://unpkg.com/p5.touchgui@0.5.2/lib/p5.touchgui.js"></script>
   <!-- this line removes any default padding and style. you might only need one of these values set. -->
 
-  <!-- <style>
-   body {padding: 50; margin: 50;
-  	background-color: #222;
-  }
-   h1 { color:#ee9;
-	    font-size: 20;
-   }
-
-   p { color:#fa0;}
-
-  </style> -->
 
 </head>
 
@@ -51,11 +42,20 @@
         <a class="nav-link" href="videos.html">VIDEOS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="arts.html">ARTS</a>
+        <a class="nav-link" href="illustrations.html">ILLUSTRATIONS</a>
       </li>
-        <li class="nav-item">
+
+	  	  <li class="nav-item">
       <a class="nav-link" href="coding.html">CODING</a>
     </li>
+
+	  	  <li class="nav-item">
+      <a class="nav-link" href="arts.html">ARTS</a>
+    </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="storyboard.html">STORYBOARD</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="about.html">ABOUT</a>
       </li>
@@ -64,25 +64,61 @@
 
   <div class="container">
 
-    <h1>  P5JS Project: K/DA Music Visualizer </h1>
+    <h1> P5JS Project: K/DA Music Visualizer </h1>
     <div class="column">
       <div class="description">
 
-    Interface and Language Track
-<br><p>
-    This is my final project for ART101 Creative Coding class, which I focus on making a visualizer for a music track of the virtual Kpop girl band called K/DA from the famous game League of Legend by Riot Games.
-    I think that each instrumental track can have its own form of visual. For example, in my project, I used K/DA's song "The Baddest" and splitted the audio track
-    into individuals, for example: drum, bass, synth, vocals, etc. Then, for each of them, I map their amplitude to the visuals, so that each scene has a unique representation for a specific instrumental layer.
-     I also cut some short samples that are used in the track to make some add-on sound effects and to create animations for them. I hope users/ players can learn more about sound design and have fun playing around with the instrumental tracks.
-</p>
-<p>CREDITS:
-<br>  - Song: <a href="https://youtu.be/RkID8_gnTxw">The Baddest" - K/DA ft. ft. (G)I-DLE, Bea Miller, Wolftyla </a>
-<br>  - Visual assets: Riot Games' <a href="https://www.leagueoflegends.com/en-us/event/kda-official-fan-club/"> K/DA Official Fan Club </a>
-<br>  - No copyright infringement intended
-<br> - Noncommercial use. (More about Riot Games' <a href="https://www.riotgames.com/en/legal?_gl=1*hgjczj*_ga*MjM5MzgyNDQ3LjE2NDc1ODE4NTk.*_ga_FXBJE5DEDD*MTY0NzU4MTg1OC4xLjEuMTY0NzU4MTg3OS4zOQ.."> Legal Jibber Jabber </a> Terms and Policies here)
-</p>
+        Interface and Language Track
+        <br>
+        <p>
+          This is my final project for ART101 Creative Coding class, I created a visualizer for the song "The Baddest" performed by the virtual Kpop girl band named K/DA, which is from the famous game League of Legend by Riot Games.
+          I believe that each waveform or instrumental track has its own visual aesthetic, and that it can be visualized in many different ways.
+          By connecting the waveform of sound to visual properties such as shape, position, scale, color, opacity, an audio that no one thought they could never see but listen to now appears to have characters.
+          In my project, I splitted the song into individual layers of soundtracks, for example: drum, bass, synth, vocals, etc. Then, I map each amplitude to different visual properties, so that each scene has a unique representation
+          for a specific instrumental layer.
+          I also cut some short samples that are used in the track to make some add-on sound effects, and created animations for them. I hope users/ players can learn more about sound design and have fun playing around with the instrumental tracks.
+        </p>
+        <p>CREDITS:
+          <br> - JavaScript library: <a href="https://p5js.org/">P5.JS</a>
+          <br> - Creator: Van Nguyen (it's me!)
+          <br> - Song: <a href="https://youtu.be/RkID8_gnTxw">The Baddest" - K/DA ft. ft. (G)I-DLE, Bea Miller, Wolftyla </a>
+          <br> - Visual assets: Riot Games' <a href="https://www.leagueoflegends.com/en-us/event/kda-official-fan-club/"> K/DA Official Fan Club </a>
+          <br> - No copyright infringement intended
+          <br> - Noncommercial use. (More about Riot Games' <a href="https://www.riotgames.com/en/legal?_gl=1*hgjczj*_ga*MjM5MzgyNDQ3LjE2NDc1ODE4NTk.*_ga_FXBJE5DEDD*MTY0NzU4MTg1OC4xLjEuMTY0NzU4MTg3OS4zOQ.."> Legal Jibber Jabber </a> Terms and
+          Policies here)
+        </p>
+        <p> Special thanks to Professor Steve Durie, and Raymond Lam for helping me making this project possible.
+        </p>
+        <p>
+          <a href="VanNguyen_Proposal.pdf">see Proposal & Wire Frames</a> <br>
+          <a href="p4-sketch.txt">see sketch.js code</a> <br>
+          <a href="p4-scenes.txt">see scenes.js code</a> <br>
+        </p>
+        <p>
+        </p>
+        <p>Scenes preview:</p>
+        <img src="assets/p4_1.jpg"> </a>
+        <img src="assets/p4_2.jpg"> </a>
+        <img src="assets/p4_3.jpg"> </a>
+        <img src="assets/p4_4.jpg"> </a>
+        <img src="assets/p4_5.jpg"> </a>
+        <img src="assets/p4_6.jpg"> </a>
+        <img src="assets/p4_7.jpg"> </a>
+        <img src="assets/p4_8.jpg"> </a>
+
+      </div>
+    <h2>  Here we are! Welcome to K/DA Visualizer Project.
+     <br> Mouse and Keyboard is needed.
+     <br>Instruction is provided under 'Help' button.
+     <br> Take the floor and enjoy your unique DJ experience! ;)
+   </h2>
     </div>
-    </div>
-<!-- <script src="touch.js"></script> -->
+
+
+    <!-- <script src="touch.js"></script> -->
+
+
+
 </body>
+
 </html>
