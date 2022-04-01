@@ -236,7 +236,7 @@ function keyPressed()
         case 'q':
         q.play();
         var splat = createSprite(mouseX, mouseY);
-         splat.addAnimation('normal', 'def_assets/asterisk_explode0001.png', 'def_assets/asterisk_explode0011.png');
+         splat.addAnimation('normal', 'assets/q_00000.png', 'assets/q_00010.png');
          splat.life = 40;
             break;
         case 'w':
@@ -260,7 +260,7 @@ function keyPressed()
         var newSprite = createSprite(random(200,800), random(400,600),30,30);
 
         //assign an animation
-        newSprite.addAnimation('normal', 'def_assets/bubbly0001.png', 'def_assets/bubbly0002.png', 'def_assets/bubbly0003.png', 'def_assets/bubbly0004.png');
+        newSprite.addAnimation('normal', 'assets/e_00000.png', 'assets/e_00010.png');
 
 newSprite.life = 20;
             break;
@@ -270,7 +270,7 @@ newSprite.life = 20;
                 var newSprite = createSprite(random(200,800), height/2,30,30);
 
                 //assign an animation
-                newSprite.addAnimation('normal', 'def_assets/asterisk.png', 'def_assets/triangle.png', 'def_assets/square.png', 'def_assets/cloud.png', 'def_assets/star.png', 'def_assets/mess.png', 'def_assets/monster.png');
+                newSprite.addAnimation('normal', 'assets/r_00000.png', 'assets/r_00011.png');
 
       newSprite.life = 20;
             break;

@@ -776,13 +776,19 @@ function scene5() {
   }
 
   this.draw = function() {
-    background(0,0,loy);
+    // background(0,0,loy);
         image(img7, 0, 0, width, height);
     image(img6, 0, 0, width, height/1.15);
 
     let volume = map(mouseX, 0, width, 0, 1);
     volume = constrain(volume, 0, 1);
     snd5.amp(volume);
+
+
+    let x = map(mouseX, 0, width, 0, 255);
+
+    background(x,0,255,50);
+
 
     //every 10 frames
     if(frameCount%10 === 0) {
@@ -823,7 +829,7 @@ function scene5() {
     //   loy++;
     // }
     //
-    pop();
+    // pop();
     stroke(255);
     rect(mouseX, mouseY, .0, 5000);
 
