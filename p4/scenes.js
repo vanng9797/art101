@@ -32,15 +32,15 @@ function intro() {
 
     console.log("We are at entering scene0");
     loy = 350;
-    snd0.isPlaying();
-    snd1.isPlaying();
-    snd2.isPlaying();
-    snd3.isPlaying();
-    snd4.isPlaying();
-    snd5.isPlaying();
+    snd0.pause();
+    snd1.pause();
+    snd2.pause();
+    snd3.pause();
+    snd4.pause();
+    snd5.pause();
 
-    if (snd0.isPlaying()) {
-      // .isPlaying() returns a boolean
+    if (snd0.isLooping()) {
+      // .isLooping() returns a boolean
       snd0.pause(); // .play() will resume from .pause() position
       //
     } else {
@@ -49,54 +49,6 @@ function intro() {
       //
     };
 
-    if (snd1.isPlaying()) {
-      // .isPlaying() returns a boolean
-      snd1.pause(); // .play() will resume from .pause() position
-      //
-    } else {
-      snd1.play();
-      snd1.setVolume(0.0);
-      //
-    };
-
-    if (snd2.isPlaying()) {
-      // .isPlaying() returns a boolean
-      snd2.pause(); // .play() will resume from .pause() position
-      //
-    } else {
-      snd2.play();
-      snd2.setVolume(0.0);
-      //
-    };
-    if (snd3.isPlaying()) {
-      // .isPlaying() returns a boolean
-      snd3.pause(); // .play() will resume from .pause() position
-      //
-    } else {
-      snd3.play();
-      snd3.setVolume(0.0);
-      //
-    };
-    if (snd4.isPlaying()) {
-      // .isPlaying() returns a boolean
-      snd4.pause(); // .play() will resume from .pause() position
-      //
-    } else {
-      snd4.play();
-      snd4.setVolume(0.0);
-      //
-    };
-    if (snd5.isPlaying()) {
-      // .isPlaying() returns a boolean
-      snd5.pause(); // .play() will resume from .pause() position
-      //
-    } else {
-      snd5.play();
-      snd5.setVolume(0.0);
-    };
-      // snd6.play();
-      // snd6.setVolume(0.1);
-      //
 
       //send off stage
       helpbtnsprite.position.x =  130;
@@ -248,26 +200,56 @@ console.log(snd1.currentTime());
 function scene1() {
 
   this.enter = function() {
-    snd0.isPlaying();
-    snd1.isPlaying();
-    snd2.isPlaying();
-    snd3.isPlaying();
-    snd4.isPlaying();
-    snd5.isPlaying();
+    snd1.isLooping();
+    snd2.isLooping();
+    snd3.isLooping();
+    snd4.isLooping();
+    snd5.isLooping();
+
     let loy = 255;
     console.log("We are at scene1 ");
     //  snd2.play();
+      snd1.loop();
+      snd1.setVolume(1.0);
 
-    if (snd1.isPlaying()) {
-      snd1.setVolume(1.0)
-    // } else {
-    //   snd0.isPlaying(); snd0.setVolume(0.0);
-    //   snd1.isPlaying(); snd1.setVolume(0.0);
-    //   snd2.isPlaying(); snd2.setVolume(0.0);
-    //   snd3.isPlaying(); snd3.setVolume(0.0);
-    //   snd4.isPlaying(); snd4.setVolume(0.0);
-    //   snd5.isPlaying(); snd5.setVolume(0.0);
+    if (snd2.isLooping()) {
+      // .isLooping() returns a boolean
+      snd2.pause(); // .play() will resume from .pause() position
+      //
+    } else {
+      snd2.loop();
+      snd2.setVolume(0.0);
+      //
     };
+    if (snd3.isLooping()) {
+      // .isLooping() returns a boolean
+      snd3.pause(); // .play() will resume from .pause() position
+      //
+    } else {
+      snd3.loop();
+      snd3.setVolume(0.0);
+      //
+    };
+    if (snd4.isLooping()) {
+      // .isLooping() returns a boolean
+      snd4.pause(); // .play() will resume from .pause() position
+      //
+    } else {
+      snd4.loop();
+      snd4.setVolume(0.0);
+      //
+    };
+    if (snd5.isLooping()) {
+      // .isLooping() returns a boolean
+      snd5.pause(); // .play() will resume from .pause() position
+      //
+    } else {
+      snd5.loop();
+      snd5.setVolume(0.0);
+    };
+      // snd6.play();
+      // snd6.setVolume(0.1);
+      //
     //send off stage
     helpbtnsprite.position.x =  130;
     helpbtnsprite.position.y =  70;
@@ -376,17 +358,17 @@ function scene2() {
 
   this.enter = function() {
 
-    snd0.isPlaying();
-    snd1.isPlaying();
-    snd2.isPlaying();
-    snd3.isPlaying();
-    snd4.isPlaying();
-    snd5.isPlaying();
+    snd0.isLooping();
+    snd1.isLooping();
+    snd2.isLooping();
+    snd3.isLooping();
+    snd4.isLooping();
+    snd5.isLooping();
     let loy = 350;
 
    console.log("We are at scene2");
 
-    if (snd2.isPlaying()) {
+    if (snd2.isLooping()) {
 
       snd2.setVolume(1.0);
     };
@@ -492,19 +474,19 @@ function scene3() {
   // }
 
   this.enter = function() {
-    snd0.isPlaying();
-    snd1.isPlaying();
-    snd2.isPlaying();
-    snd3.isPlaying();
-    snd4.isPlaying();
-    snd5.isPlaying();
+    snd0.isLooping();
+    snd1.isLooping();
+    snd2.isLooping();
+    snd3.isLooping();
+    snd4.isLooping();
+    snd5.isLooping();
 
     let loy = 350;
     console.log("We are at scene3");
 
 
 
-    if (snd3.isPlaying()) {
+    if (snd3.isLooping()) {
       snd3.setVolume(1.0);
     }
     //send off stage
@@ -617,16 +599,16 @@ function scene4() {
   }
 
   this.enter = function() {
-    snd0.isPlaying();
-    snd1.isPlaying();
-    snd2.isPlaying();
-    snd3.isPlaying();
-    snd4.isPlaying();
-    snd5.isPlaying();
+    snd0.isLooping();
+    snd1.isLooping();
+    snd2.isLooping();
+    snd3.isLooping();
+    snd4.isLooping();
+    snd5.isLooping();
     let loy = 350;
     console.log("We are at scene 4");
 
-    if (snd4.isPlaying()) {
+    if (snd4.isLooping()) {
 
       snd4.setVolume(1.0);
     }
@@ -738,16 +720,16 @@ function scene5() {
   // }
 
   this.enter = function() {
-    snd0.isPlaying();
-    snd1.isPlaying();
-    snd2.isPlaying();
-    snd3.isPlaying();
-    snd4.isPlaying();
-    snd5.isPlaying();
+    snd0.isLooping();
+    snd1.isLooping();
+    snd2.isLooping();
+    snd3.isLooping();
+    snd4.isLooping();
+    snd5.isLooping();
     let loy = 350;
     console.log("We are at scene 5");
 
-    if (snd5.isPlaying()) {
+    if (snd5.isLooping()) {
 
       snd5.setVolume(1);
     }
@@ -861,18 +843,18 @@ function scene6() {
   }
 
   this.enter = function() {
-    snd0.isPlaying();
-    snd1.isPlaying();
-    snd2.isPlaying();
-    snd3.isPlaying();
-    snd4.isPlaying();
-    snd5.isPlaying();
-    snd6.isPlaying();
+    snd0.isLooping();
+    snd1.isLooping();
+    snd2.isLooping();
+    snd3.isLooping();
+    snd4.isLooping();
+    snd5.isLooping();
+    snd6.isLooping();
 
     let loy = 350;
     console.log("We are entering scene6");
 
-    if (snd6.isPlaying()) {
+    if (snd6.isLooping()) {
 
       snd1.setVolume(0.0);
       snd2.setVolume(0.0);
